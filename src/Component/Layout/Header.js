@@ -4,12 +4,12 @@ import Mealsimage from "../../assets/meals.jpg"
 import classes from './Header.module.css'
 import HeaderCardButton from './HeaderCardButton'
 
-const Header=()=> {
+const Header=(props)=> {
   return (
    <Fragment>
     <header  className={classes.header}>
     <h1>React Meals</h1>
-    <HeaderCardButton/>
+    <HeaderCardButton onClick={props.onShowCard}/>
     
     </header>
     <div className={classes["main-image"]}>
